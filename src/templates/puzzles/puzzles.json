@@ -1,0 +1,31 @@
+{
+  "puzzles": [{
+    "level": 0,
+    "buttons": [{
+      "type": "T",
+      "label": "downTwo"
+    }, {
+      "type": "S",
+      "label": "no"
+    }, {
+      "type": "F",
+      "label": "yes"
+    }]
+  }, {
+    "level": 1,
+    "info": [{
+      "T": 0,
+      "F": 1
+    }],
+    "buttons": [{
+      "type": "T",
+      "label": "no"
+    }, {
+      "type": "S",
+      "label": "upOne"
+    }, {
+      "type": "M",
+      "label": "yes"
+    }]
+  }]
+}

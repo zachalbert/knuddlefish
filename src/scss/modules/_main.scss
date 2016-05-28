@@ -1,0 +1,59 @@
+body {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#46afdb+0,59f0e8+100 */
+  background: #46afdb; /* Old browsers */
+  background:linear-gradient(to bottom,#46afdb 0,#59f0e8 100%);
+  font-family: $body-font-family;
+  font-weight: 100;
+}
+
+
+
+.dev-mode {
+  display: none;
+
+  span,
+  a {
+    padding: 1rem 0 1rem 1rem;
+    color: #fff;
+    z-index: 1000;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.5;
+    text-transform: uppercase;
+    font-size: .9rem;
+    letter-spacing: 1px;
+  }
+}
+
+//testing overlay effects
+.atmosphere-overlay {
+  position: absolute;
+  z-index: 8;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+}
+
+.night {
+  // .atmosphere-overlay {
+  //   mix-blend-mode: darken;
+  //   opacity: 0.5;
+  //   background-image: linear-gradient(#9C079E 0%, #110B59 100%);
+  // }
+}
+
+.sunset {
+  // .atmosphere-overlay {
+  //   mix-blend-mode: color;
+  //   opacity: 0.9;
+  //   background-image: linear-gradient(#FF804E 0%, #8C009A 100%);
+  // }
+}
+
+.day {
+  // .atmosphere-overlay {
+  //   mix-blend-mode: screen;
+  //   opacity: 0.5;
+  //   background-image: linear-gradient(#65FF96 0%, #FFFB09 100%);
+  // }
+}
