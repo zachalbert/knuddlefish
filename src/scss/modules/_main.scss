@@ -1,59 +1,79 @@
 body {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#46afdb+0,59f0e8+100 */
-  background: #46afdb; /* Old browsers */
-  background:linear-gradient(to bottom,#46afdb 0,#59f0e8 100%);
+  background: $color-bg;
   font-family: $body-font-family;
   font-weight: 100;
 }
 
+.arrow {
+  display: block;
 
+  &.right {
+    transform: rotate(90deg);
+  }
 
-.dev-mode {
-  display: none;
+  &.down {
+    transform: rotate(180deg);
+  }
 
-  span,
-  a {
-    padding: 1rem 0 1rem 1rem;
-    color: #fff;
-    z-index: 1000;
-    display: inline-block;
-    text-decoration: none;
-    opacity: 0.5;
-    text-transform: uppercase;
-    font-size: .9rem;
-    letter-spacing: 1px;
+  &.left {
+    transform: rotate(270deg);
   }
 }
 
-//testing overlay effects
-.atmosphere-overlay {
-  position: absolute;
-  z-index: 8;
-  width: 100vw;
+.puzzle {
+  white-space: nowrap;
+  position: relative;
   height: 100vh;
-  pointer-events: none;
+
+  &-panel {
+    display: inline-block;
+    float: left;
+    position: relative;
+    min-height: 100vh;
+  }
+
+  .btn {
+    bottom: 0;
+  }
 }
 
-.night {
-  // .atmosphere-overlay {
-  //   mix-blend-mode: darken;
-  //   opacity: 0.5;
-  //   background-image: linear-gradient(#9C079E 0%, #110B59 100%);
-  // }
+.level0 .puzzle { left: 0vw; }
+.level1 .puzzle { left: -100vw; }
+
+.star {
+  float: left;
+  margin: 1rem;
 }
 
-.sunset {
-  // .atmosphere-overlay {
-  //   mix-blend-mode: color;
-  //   opacity: 0.9;
-  //   background-image: linear-gradient(#FF804E 0%, #8C009A 100%);
-  // }
-}
+.meta {
+  float: right;
+  margin: 1rem;
 
-.day {
-  // .atmosphere-overlay {
-  //   mix-blend-mode: screen;
-  //   opacity: 0.5;
-  //   background-image: linear-gradient(#65FF96 0%, #FFFB09 100%);
-  // }
+  &-item {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 0.5rem;
+
+    span {
+      text-align: center;
+      font-weight: bold;
+      color: #fff;
+      display: block;
+      line-height: 3rem;
+    }
+  }
+
+  &__true {
+    background: $color-true;
+  }
+
+  &__sometimes {
+    background: $color-sometimes-small;
+  }
+
+  &__false {
+    background: $color-false;
+  }
 }

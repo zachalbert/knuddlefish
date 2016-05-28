@@ -12,9 +12,6 @@
 // SCSS MIXINS
 //----------------------------------*/
 
-@import 'mixins/_object.scss';
-@import 'mixins/_position.scss';
-
 //----------------------------------*\
 // VENDOR
 //----------------------------------*/
@@ -27,12 +24,6 @@
 
 @import 'modules/_typography.scss';
 @import 'modules/_misc.scss';
-@import 'modules/_modals.scss';
-
-@import 'modules/_animations.scss';
-@import 'modules/_waves.scss';
-@import 'modules/_character.scss';
-@import 'modules/_object-base.scss';
 
 @import 'modules/_ui.scss';
 @import 'modules/_main.scss';

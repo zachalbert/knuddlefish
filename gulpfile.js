@@ -53,7 +53,9 @@ function requireUncached( $module ) {
 gulp.task( 'css', function() {
   return gulp.src('src/scss/style.scss')
   .pipe(sourcemaps.init())
-  .pipe(sass({errLogToConsole: true}))
+  .pipe(plumber())
+  .pipe(sass())
+  .pipe(plumber.stop())
   .pipe(autoprefixer('last 4 version'))
   .pipe(gulp.dest('dist/assets/css'))
   .pipe(cleanCSS())

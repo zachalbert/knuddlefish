@@ -1,174 +1,105 @@
 .btn {
   display: block;
-  padding: 1.5rem 2rem;
-  //background: $color-sea;
   text-align: center;
-  border-radius: 2px;
+  font-size: 3em;
+  font-weight: bolder;
   text-decoration: none;
-  color: $color-gray-dark;
-  margin-bottom: 1rem;
-  border: 1px solid transparentize($color-gray,.8);
-  transition: background .33s;
-  &:hover {
-    background: transparentize($color-gray, .9);
+  padding: 1.5rem 1rem;
+
+  &__bottom {
+    position: absolute;
+    bottom: 0;
   }
-}
 
-//setting up ui stats
-.ui-stat-container {
-  position: absolute;
-  bottom: 0;
-  left: 32px;
-  overflow: hidden;
-  z-index: 9;
-  padding-top: 32px;
-
-  /* Just getting this to work. Will change to be more efficient. */
-  width: 100%;
-  height: 100%;
-
-  /* Ignore z-index of stat container for debugging and interactions */
-  pointer-events: none;
-
-}
-
-.stat {
-  background: linear-gradient(to bottom,  #ffffff 50%,#ccf0ef 100%);
-  border-radius: 4px;
-  cursor: pointer;
-  float: left;
-  margin-right: 8px;
-  width: 96px;
-  // height: 144px;
-  padding-top: 16px;
-  transition: .33s;
-
-  /* Hacking this for now. Change soon. */
-  position: absolute;
-  bottom: 0;
-
-  &:hover {
-    // margin-top: -5px;
+  &__half {
+    width: 30vw;
   }
-  &__inner {
-    width: 36px;
-    height: 29px;
-    margin: 0 auto;
-    background-repeat: repeat-y;
-  }
-  &--food {
+
+  &__prev {
     left: 0;
-    .stat__inner {
-      background-image: url(../../assets/img/ui/icons/icon_food.svg);
+  }
+
+  &__next {
+    left: 70vw;
+  }
+
+  &-primary {
+    background: $color-primary;
+    color: $color-primary-text;
+
+    &:hover {
+      background: $color-primary-dark;
     }
   }
-  &--water {
-    left: 104px;
-    .stat__inner {
-      background-image: url(../../assets/img/ui/icons/icon_water.svg);
+
+  &-secondary {
+    background: $color-secondary;
+    color: $color-secondary-text;
+
+    &:hover {
+      background: $color-secondary-dark;
     }
   }
-  &--sanity{
-    left: 208px;
-    .stat__inner {
-      background-image: url(../../assets/img/ui/icons/icon_sanity.svg);
+
+  &-big {
+    width: 80%;
+    margin: 0 auto 2rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    padding: 1rem;
+    font-size: 4rem;
+    position: relative;
+    box-shadow:
+      inset 0 -8px 0 rgba(0,0,0, $button-shadow),
+      0 12px 0 2px rgba(0,0,0, $button-shadow);
+
+    &:hover {
+
+    }
+
+    &:active {
+      transform: scale(0.9);
+      box-shadow:
+        inset 0 -8px 0 rgba(0,0,0, $button-shadow),
+        0 4px 0 1px rgba(0,0,0, $button-shadow);
+    }
+
+    &.active {
+      box-shadow:
+        inset 0 -8px 0 rgba(0,0,0, $button-shadow),
+        0 4px 0 1px rgba(0,0,0, $button-shadow);
     }
   }
-}
 
-//setting up ui card overlay
-// <div class="ui-object-card-container">
-//     <div class="ui-object-card">
-//       <div class="ui-object-card__close">x</div>
-//       <div class="ui-object-card__image"></div>
-//       <ul class="ui-object-card__choices">
-//         <li class="ui-object-card__choice">Pour out</li>
-//         <li class="ui-object-card__choice">Set free</li>
-//         <li class="ui-object-card__choice">Caress</li>
-//       </ul>
-//       </div>
-//     </div>
-//   </div>
+  &__t {
+    background: $color-true;
 
-.ui-object-card-container {
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
-  background: transparentize(#012E52, .2);
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  overflow-y: scroll;
-}
-
-.ui-object-card {
-  font-family: brandon-grotesque;
-  border-radius: $base-radius;
-  width: 100vw;
-  max-width: 320px;
-  margin: 32px auto;
-  background: linear-gradient(to bottom,  #ffffff 50%,#ccf0ef 100%);
-  position: relative;
-}
-
-.ui-object-card__info {
-  border-radius: $base-radius $base-radius 0 0;
-  background: linear-gradient(to bottom,  #ffffff 50%,#ccf0ef 100%);
-  padding: $size-xs/2+px;
-}
-
-.ui-object-card__close {
-  background: linear-gradient(to bottom, #FFD287 0%, #FC2AA1 100%);
-  border-radius: 50%;
-  box-shadow: 0 1px 3px transparentize(#012E52, .5);
-  color: white;
-  font-size: 24px;
-  position: absolute;
-  top: -$size-xs/2+px;
-  right: -$size-xs/2+px;
-  height: $size-xs+px;
-  width: $size-xs+px;
-  text-align: center;
-  line-height: $size-xs+px;
-}
-
-.ui-object-card__image {
-  height: $size-lg+px;
-  width: $size-lg+px;
-  margin: 0 auto;
-}
-
-.ui-object-card__name {
-  font-size: $size-xs*.75+px;
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: $size-sm+px;
-  margin: $size-xs/2+px 0 0 0 ;
-  text-align: center;
-  color: #520147;
-}
-
-.ui-object-card__choices {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.ui-object-card__choice {
-  cursor: pointer;
-  padding: $size-xs/2+px;
-  box-shadow: 0 -1px 0 transparentize(#012E52, .9);
-  transition: background .33s;
-  &:hover {
-    background: transparentize(#012E52, .97);
+    &:hover {
+      background: darken($color-true, 8%);
+    }
   }
-}
 
-//object types
-.ui-object-card-container {
-  &--oil-barrel {
-    .ui-object-card__image {
-      background-image: url(../../assets/img/objects/object_oil-barrel.svg);
+  &__s {
+    background: $color-sometimes;
+
+    &:hover {
+      background: $color-sometimes-hover;
+    }
+  }
+
+  &__f {
+    background: $color-false;
+
+    &:hover {
+      background: darken($color-false, 8%);
+    }
+  }
+
+  &__m {
+    background: $color-mystery;
+
+    &:hover {
+      background: darken($color-mystery, 8%);
     }
   }
 }

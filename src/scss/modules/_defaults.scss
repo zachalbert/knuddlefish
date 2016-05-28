@@ -4,7 +4,7 @@
   text-rendering: optimizeLegibility;
 }
 html {
-  font-size: 62.5%;
+  font-size: 100%;
 }
 body {
   font-size: $base-font;
@@ -14,13 +14,10 @@ body,html{
 	overflow: hidden;
 }
 
-/* For dev purposes, illuminates where objects are */
-.test-mask {
-  background: rgba(red, 0.35);
-  display: none;
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  top: 0;
-  left: 0;
+a {
+  transition: all 0.1s ease-out;
+
+  &:hover {
+    transition: all 0.05s ease-in;
+  }
 }

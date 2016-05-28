@@ -14,9 +14,44 @@ $base-radius: $base-font/4;
 $wave-height: $base-lh;
 $wave-scale:  $base-font;
 
-$color-glow:  #B7FEDD;
+$button-shadow:        0.1;
 
-$color-aqua: #59f0e8;
+$color-primary:        #b7fedd;
+$color-primary-dark:   darken($color-primary, 10%);
+$color-primary-text:   #074059;
+
+$color-secondary:      #59f0e8;
+$color-secondary-dark: darken($color-secondary, 10%);
+$color-secondary-text: #074059;
+
+$color-bg:             lighten(#5B99B5, 35%);
+$color-bg-dark:        lighten(#5B99B5, 5%);
+
+$color-true:           #6AE1E6;
+$color-false:          #FFA74A;
+$color-mystery:        #ccc;
+$color-sometimes:      repeating-linear-gradient(
+                         315deg,
+                         $color-true,
+                         $color-true 70px,
+                         $color-false 70px,
+                         $color-false 140px
+                       );
+$color-sometimes-hover: repeating-linear-gradient(
+                          315deg,
+                          darken($color-true, 8%),
+                          darken($color-true, 8%) 70px,
+                          darken($color-false, 8%) 70px,
+                          darken($color-false, 8%) 140px
+                      );
+$color-sometimes-small:  repeating-linear-gradient(
+                           315deg,
+                           $color-true,
+                           $color-true 34px,
+                           $color-false 34px,
+                           $color-false 68px
+                       );
+
 $color-sea: #46afdb;
 
 $color-coral: #FC2AA1; //HOT PINK!!!!
@@ -26,11 +61,3 @@ $color-gray-dark: #074059;
 
 $color-submerged-light: #D0AEE4;
 $color-submerged-dark: #007A9B;
-
-$wave-height: 10px;
-
-$size-xs: 32;
-$size-sm: 48;
-$size-md: 96;
-$size-lg: 128;
-$size-xl: 256;
