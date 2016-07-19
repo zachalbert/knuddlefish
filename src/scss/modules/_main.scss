@@ -23,17 +23,26 @@ body {
 .puzzle {
   white-space: nowrap;
   position: relative;
-  height: 100vh;
+
+  &-wrap {
+    width: 100vw;
+    overflow: hidden;
+  }
 
   &-panel {
+    width: 100vw;
     display: inline-block;
     float: left;
     position: relative;
-    min-height: 100vh;
   }
 
-  .btn {
+  &-nav {
+    position: absolute;
     bottom: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: $lead-single;
   }
 }
 

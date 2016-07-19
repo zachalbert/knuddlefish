@@ -2,163 +2,135 @@
   "puzzles": [{
     "level": 0,
     "buttons": [{
-      "type": "T",
-      "label": "downTwo"
+      "type": "s",
+      "label": "blank",
+      "outcome": "lose"
     }, {
-      "type": "S",
-      "label": "no"
+      "type": "t",
+      "label": "yes",
+      "outcome": "win"
     }, {
-      "type": "F",
-      "label": "yes"
+      "type": "s",
+      "label": "blank",
+      "outcome": "lose"
     }]
   }, {
     "level": 1,
-    "info": [{
-      "T": 0,
-      "F": 1
-    }],
     "buttons": [{
-      "type": "T",
-      "label": "no"
-    }, {
-      "type": "S",
-      "label": "upOne"
-    }, {
-      "type": "M",
-      "label": "yes"
-    }]
-  }, {
-    "level": 10,
-    "buttons": [{
-      "type": "S",
-      "label": "blank",
-      "outcome": "lose"
-    }, {
-      "type": "T",
-      "label": "yes",
-      "outcome": "win"
-    }, {
-      "type": "S",
-      "label": "blank",
-      "outcome": "lose"
-    }]
-  }, {
-    "level": 11,
-    "buttons": [{
-      "type": "S",
+      "type": "s",
       "label": "blank",
       "outcome": "win"
     }, {
-      "type": "T",
+      "type": "t",
       "label": "no",
       "outcome": "lose"
     }, {
-      "type": "T",
+      "type": "t",
       "label": "no",
       "outcome": "lose"
     }]
   }, {
-    "level": 12,
+    "level": 2,
     "buttons": [{
-      "type": "T",
+      "type": "t",
       "label": "yes",
       "outcome": "win"
     }, {
-      "type": "S",
+      "type": "s",
       "label": "blank",
       "outcome": "lose"
     }, {
-      "type": "T",
+      "type": "t",
       "label": "no",
       "outcome": "lose"
     }]
   }, {
-    "level": 13,
+    "level": 3,
     "buttons": [{
-      "type": "T",
+      "type": "t",
       "label": "no",
       "outcome": "lose"
     }, {
-      "type": "T",
+      "type": "t",
       "label": "yes",
       "outcome": "win"
     }, {
-      "type": "T",
+      "type": "t",
       "label": "no",
       "outcome": "lose"
     }]
   }, {
-    "level": 14,
+    "level": 4,
     "buttons": [{
-      "type": "T",
+      "type": "t",
       "label": "no",
       "outcome": "lose"
     }, {
-      "type": "F",
+      "type": "f",
       "label": "yes",
       "outcome": "lose"
     }, {
-      "type": "F",
+      "type": "f",
       "label": "yes",
       "outcome": "win"
     }]
   }, {
-    "level": 15,
+    "level": 5,
     "buttons": [{
-      "type": "T",
+      "type": "t",
       "label": "no",
       "outcome": "lose"
     }, {
-      "type": "F",
+      "type": "f",
       "label": "no",
       "outcome": "win"
     }, {
-      "type": "F",
+      "type": "f",
       "label": "yes",
       "outcome": "lose"
     }]
   }, {
-    "level": 16,
+    "level": 6,
     "buttons": [{
-      "type": "F",
+      "type": "f",
       "label": "yes",
       "outcome": "lose"
     }, {
-      "type": "F",
+      "type": "f",
       "label": "yes",
       "outcome": "lose"
     }, {
-      "type": "F",
+      "type": "f",
       "label": "no",
       "outcome": "win"
     }]
   }, {
-    "level": 17,
+    "level": 7,
     "buttons": [{
-      "type": "F",
+      "type": "f",
       "label": "yes",
       "outcome": "lose"
     }, {
-      "type": "F",
+      "type": "f",
       "label": "yes",
       "outcome": "lose"
     }, {
-      "type": "T",
+      "type": "t",
       "label": "yes",
       "outcome": "win"
     }]
   }, {
-    "level": 18,
+    "level": 8,
     "buttons": [{
-      "type": "F",
+      "type": "f",
       "label": "no",
       "outcome": "win"
     }, {
-      "type": "T",
+      "type": "t",
       "label": "no",
       "outcome": "lose"
     }, {
-      "type": "T",
+      "type": "t",
       "label": "no",
       "outcome": "lose"
     }]

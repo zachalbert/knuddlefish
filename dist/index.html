@@ -21,7 +21,7 @@
 
 <nav>
   <div class="star">★ 5</div>
-  <div class="meta">
+  <!-- <div class="meta">
     <div class="meta-item meta__true">
       <span>0</span>
     </div>
@@ -31,27 +31,224 @@
     <div class="meta-item meta__false">
       <span>1</span>
     </div>
-  </div>
+  </div> -->
 </nav>
 
-<div class="puzzle" style="width: 200vw;">
-  
-  <div class="puzzle-panel" style="width: 100vw;">
-    <h1>#1</h1>
-    <a href="#" class="btn btn-big btn__t">&times;</a>
-    <a href="#" class="btn btn-big btn__s">&times;</a>
-    <a href="#" class="btn btn-big btn__f"><span class="arrow up">▴</span></a>
+<div class="puzzle-wrap">
+  <div class="puzzle" style="width: 900vw;">
+    
+    <div class="puzzle-panel" id="puzzle-0">
+      <h1>#1</h1>
+      
+      <a href="#" class="btn btn-big btn__s btn__blank">
+        
+        ?
+        
+      </a>
+      
+      <a href="#" class="btn btn-big btn__t btn__yes">
+        
+        &#10003;
+        
+      </a>
+      
+      <a href="#" class="btn btn-big btn__s btn__blank">
+        
+        ?
+        
+      </a>
+      
+    </div>
+    
+    <div class="puzzle-panel" id="puzzle-1">
+      <h1>#2</h1>
+      
+      <a href="#" class="btn btn-big btn__s btn__blank">
+        
+        ?
+        
+      </a>
+      
+      <a href="#" class="btn btn-big btn__t btn__no">
+        
+        &times;
+        
+      </a>
+      
+      <a href="#" class="btn btn-big btn__t btn__no">
+        
+        &times;
+        
+      </a>
+      
+    </div>
+    
+    <div class="puzzle-panel" id="puzzle-2">
+      <h1>#3</h1>
+      
+      <a href="#" class="btn btn-big btn__t btn__yes">
+        
+        &#10003;
+        
+      </a>
+      
+      <a href="#" class="btn btn-big btn__s btn__blank">
+        
+        ?
+        
+      </a>
+      
+      <a href="#" class="btn btn-big btn__t btn__no">
+        
+        &times;
+        
+      </a>
+      
+    </div>
+    
+    <div class="puzzle-panel" id="puzzle-3">
+      <h1>#4</h1>
+      
+      <a href="#" class="btn btn-big btn__t btn__no">
+        
+        &times;
+        
+      </a>
+      
+      <a href="#" class="btn btn-big btn__t btn__yes">
+        
+        &#10003;
+        
+      </a>
+      
+      <a href="#" class="btn btn-big btn__t btn__no">
+        
+        &times;
+        
+      </a>
+      
+    </div>
+    
+    <div class="puzzle-panel" id="puzzle-4">
+      <h1>#5</h1>
+      
+      <a href="#" class="btn btn-big btn__t btn__no">
+        
+        &times;
+        
+      </a>
+      
+      <a href="#" class="btn btn-big btn__f btn__yes">
+        
+        &#10003;
+        
+      </a>
+      
+      <a href="#" class="btn btn-big btn__f btn__yes">
+        
+        &#10003;
+        
+      </a>
+      
+    </div>
+    
+    <div class="puzzle-panel" id="puzzle-5">
+      <h1>#6</h1>
+      
+      <a href="#" class="btn btn-big btn__t btn__no">
+        
+        &times;
+        
+      </a>
+      
+      <a href="#" class="btn btn-big btn__f btn__no">
+        
+        &times;
+        
+      </a>
+      
+      <a href="#" class="btn btn-big btn__f btn__yes">
+        
+        &#10003;
+        
+      </a>
+      
+    </div>
+    
+    <div class="puzzle-panel" id="puzzle-6">
+      <h1>#7</h1>
+      
+      <a href="#" class="btn btn-big btn__f btn__yes">
+        
+        &#10003;
+        
+      </a>
+      
+      <a href="#" class="btn btn-big btn__f btn__yes">
+        
+        &#10003;
+        
+      </a>
+      
+      <a href="#" class="btn btn-big btn__f btn__no">
+        
+        &times;
+        
+      </a>
+      
+    </div>
+    
+    <div class="puzzle-panel" id="puzzle-7">
+      <h1>#8</h1>
+      
+      <a href="#" class="btn btn-big btn__f btn__yes">
+        
+        &#10003;
+        
+      </a>
+      
+      <a href="#" class="btn btn-big btn__f btn__yes">
+        
+        &#10003;
+        
+      </a>
+      
+      <a href="#" class="btn btn-big btn__t btn__yes">
+        
+        &#10003;
+        
+      </a>
+      
+    </div>
+    
+    <div class="puzzle-panel" id="puzzle-8">
+      <h1>#9</h1>
+      
+      <a href="#" class="btn btn-big btn__f btn__no">
+        
+        &times;
+        
+      </a>
+      
+      <a href="#" class="btn btn-big btn__t btn__no">
+        
+        &times;
+        
+      </a>
+      
+      <a href="#" class="btn btn-big btn__t btn__no">
+        
+        &times;
+        
+      </a>
+      
+    </div>
+    
   </div>
-  
-  <div class="puzzle-panel" style="width: 100vw;">
-    <h1>#2</h1>
-    <a href="#" class="btn btn-big btn__t">&times;</a>
-    <a href="#" class="btn btn-big btn__s">&times;</a>
-    <a href="#" class="btn btn-big btn__f"><span class="arrow up">▴</span></a>
-  </div>
-  
-  <a href="#" class="btn btn-nav btn__half btn__bottom btn__prev"><span class="arrow left">▴</span></a>
-  <a href="#" class="btn btn-nav btn__half btn__bottom btn__next"><span class="arrow right">▴</span></a>
+</div>
+<div class="puzzle-nav">
+  <a href="#" class="nav-left">dev: prev</a>
+  <a href="#" class="nav-right">dev: next</a>
 </div>
 
 

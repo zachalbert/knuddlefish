@@ -1447,9 +1447,9 @@ var tools = ( function() {
 (function ($, window, document, undefined) {
   'use strict';
 
-  /*global
-    modules/config
-    modules/tools
+  /* globals
+     config,
+     tools
   */
 
   tools.start( config.yay );

@@ -1,12 +1,24 @@
-<div class="puzzle" style="width: {{ puzzles.length }}00vw;">
-  {% for puzzle in puzzles %}
-  <div class="puzzle-panel" style="width: 100vw;">
-    <h1>#{{ puzzle.level + 1 }}</h1>
-    <a href="#" class="btn btn-big btn__t">&times;</a>
-    <a href="#" class="btn btn-big btn__s">&times;</a>
-    <a href="#" class="btn btn-big btn__f"><span class="arrow up">▴</span></a>
+<div class="puzzle-wrap">
+  <div class="puzzle" style="width: {{ puzzles.length }}00vw;">
+    {% for puzzle in puzzles %}
+    <div class="puzzle-panel" id="puzzle-{{ puzzle.level }}">
+      <h1>#{{ puzzle.level + 1 }}</h1>
+      {% for button in puzzle.buttons %}
+      <a href="#" class="btn btn-big btn__{{ button.type }} btn__{{ button.label }}">
+        {% if button.label == "no" %}
+        &times;
+        {% elif button.label == "yes" %}
+        &#10003;
+        {% elif button.label == "blank" %}
+        ?
+        {% endif %}
+      </a>
+      {% endfor %}
+    </div>
+    {% endfor %}
   </div>
-  {% endfor %}
-  <a href="#" class="btn btn-nav btn__half btn__bottom btn__prev"><span class="arrow left">▴</span></a>
-  <a href="#" class="btn btn-nav btn__half btn__bottom btn__next"><span class="arrow right">▴</span></a>
+</div>
+<div class="puzzle-nav">
+  <a href="#" class="nav-left">dev: prev</a>
+  <a href="#" class="nav-right">dev: next</a>
 </div>

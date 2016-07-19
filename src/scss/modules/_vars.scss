@@ -6,6 +6,11 @@ $scale:       1.5;
 $base-font:   16px;
 $base-lh:     $base-font * $scale;
 
+$lead-half: $base-lh / 2;
+$lead-single: $base-lh;
+$lead-double: $base-lh * 2;
+$lead-triple: $base-lh * 3;
+
 $heading-font-family: jubilat, garamond, serif;
 $body-font-family:    brandon-grotesque, Helvetica, sans-serif;
 
@@ -14,7 +19,7 @@ $base-radius: $base-font/4;
 $wave-height: $base-lh;
 $wave-scale:  $base-font;
 
-$button-shadow:        0.1;
+$button-shadow:        0.08;
 
 $color-primary:        #b7fedd;
 $color-primary-dark:   darken($color-primary, 10%);

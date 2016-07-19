@@ -3,15 +3,9 @@
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
-html {
-  font-size: 100%;
-}
+
 body {
   font-size: $base-font;
-}
-body,html{
-	min-height: 100vh;
-	overflow: hidden;
 }
 
 a {
