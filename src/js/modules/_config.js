@@ -2,6 +2,7 @@
 var config = ( function() {
   'use strict';
   return {
-    'yay': 'hooray'
+    'calcDelay': 500,
+    'showResultsLength': 1000
   };
 }());

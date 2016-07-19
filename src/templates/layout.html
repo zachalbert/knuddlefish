@@ -1,7 +1,7 @@
 {% include "./src/templates/partials/_head.html" %}
 
 <nav>
-  <div class="star">★ 5</div>
+  <div class="star">★ <span class="num">X</span></div>
   <!-- <div class="meta">
     <div class="meta-item meta__true">
       <span>0</span>
@@ -16,5 +16,9 @@
 </nav>
 
 {% include "./src/templates/puzzles/puzzles.html" %}
+
+{% include "./src/templates/partials/modal.html" %}
+
+<div class="overlay"></div>
 
 {% include "./src/templates/partials/_footer.html" %}
