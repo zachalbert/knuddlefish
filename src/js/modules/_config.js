@@ -2,7 +2,7 @@
 var config = ( function() {
   'use strict';
   return {
-    'calcDelay': 500,
-    'showResultsLength': 1000
+    'calcDelay': 1500,
+    'showResultsLength': 2000
   };
 }());
