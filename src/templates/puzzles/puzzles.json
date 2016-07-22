@@ -70,7 +70,7 @@
       "label": "yes",
       "outcome": "lose"
     }, {
-      "type": "f",
+      "type": "t",
       "label": "yes",
       "outcome": "win"
     }]
