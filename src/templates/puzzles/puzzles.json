@@ -2,7 +2,7 @@
   "puzzles": [{
     "level": 0,
     "buttons": [{
-      "type": "s",
+      "type": "n",
       "label": "blank",
       "outcome": "lose"
     }, {
@@ -10,14 +10,14 @@
       "label": "yes",
       "outcome": "win"
     }, {
-      "type": "s",
+      "type": "n",
       "label": "blank",
       "outcome": "lose"
     }]
   }, {
     "level": 1,
     "buttons": [{
-      "type": "s",
+      "type": "n",
       "label": "blank",
       "outcome": "win"
     }, {
@@ -36,7 +36,7 @@
       "label": "yes",
       "outcome": "win"
     }, {
-      "type": "s",
+      "type": "n",
       "label": "blank",
       "outcome": "lose"
     }, {
@@ -132,6 +132,21 @@
     }, {
       "type": "t",
       "label": "no",
+      "outcome": "lose"
+    }]
+  }, {
+    "level": 9,
+    "buttons": [{
+      "type": "f",
+      "label": "point+0+1",
+      "outcome": "win"
+    }, {
+      "type": "t",
+      "label": "point+0-1",
+      "outcome": "lose"
+    }, {
+      "type": "t",
+      "label": "point+0-2",
       "outcome": "lose"
     }]
   }]

@@ -6,24 +6,24 @@
   text-decoration: none;
   padding: 1.5rem 1rem;
 
-  &__bottom {
+  &--bottom {
     position: absolute;
     bottom: 0;
   }
 
-  &__half {
+  &--half {
     width: 30vw;
   }
 
-  &__prev {
+  &--prev {
     left: 0;
   }
 
-  &__next {
+  &--next {
     left: 70vw;
   }
 
-  &-primary {
+  &--primary {
     background: $color-primary;
     color: $color-primary-text;
 
@@ -32,7 +32,7 @@
     }
   }
 
-  &-secondary {
+  &--secondary {
     background: $color-secondary;
     color: $color-secondary-text;
 
@@ -41,7 +41,7 @@
     }
   }
 
-  &-big {
+  &--big {
     width: 80%;
     margin: 0 auto 2rem;
     border-radius: 0.5rem;
@@ -64,7 +64,7 @@
       filter: blur(2px);
     }
 
-    &.btn__yes {
+    &.btn--yes {
       font-size: 3em;
       padding: 1.72rem 1rem;
     }
@@ -81,7 +81,7 @@
     }
   }
 
-  &__t {
+  &--t {
     background: $color-true;
 
     &:hover {
@@ -89,7 +89,7 @@
     }
   }
 
-  &__s {
+  &--s {
     background: $color-sometimes;
 
     &:hover {
@@ -97,7 +97,7 @@
     }
   }
 
-  &__f {
+  &--f {
     background: $color-false;
 
     &:hover {
@@ -105,7 +105,7 @@
     }
   }
 
-  &__m {
+  &--n {
     background: $color-mystery;
 
     &:hover {

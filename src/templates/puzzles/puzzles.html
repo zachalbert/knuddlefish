@@ -4,13 +4,13 @@
     {% if loop.last %}
     <div class="puzzle-panel" id="final">
       <h1 class="final-text"><em>Fin.</em></h1>
-      <a href="#" class="btn btn-big btn__t btn-restart">Restart</a>
+      <a href="#" class="btn btn--big btn--t btn-restart">Restart</a>
     </div>
     {% else %}
     <div class="puzzle-panel" id="puzzle-{{ puzzle.level }}">
       <h1>#{{ puzzle.level + 1 }}</h1>
       {% for button in puzzle.buttons %}
-      <a href="#" class="btn puzzle-btn btn-big btn__{{ button.type }} btn__{{ button.label }}" data-outcome="{{ button.outcome }}">
+      <a href="#" class="btn puzzle-btn btn--big btn--{{ button.type }} btn--{{ button.label }}" data-outcome="{{ button.outcome }}">
         {% if button.label == "no" %}
         &times;
         {% elif button.label == "yes" %}
@@ -25,7 +25,7 @@
     {% endfor %}
   </div>
 </div>
-<!-- <div class="puzzle-nav">
+<div class="puzzle-nav">
   <a href="#" class="nav-left">dev: prev</a>
   <a href="#" class="nav-right">dev: next</a>
-</div> -->
+</div>

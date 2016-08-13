@@ -14,33 +14,33 @@ var tools = ( function($, window, document, undefined) {
       tools.updateStars();
     },
     showModal: function() {
-      $('.overlay').addClass('overlay__visible');
+      $('.overlay').addClass('overlay--visible');
+      $('.modal__spinner').show();
       $('#results').velocity({
         top: 0
       }, 800, 'easeInOutQuart' );
     },
     hideModal: function() {
-      $('.overlay').removeClass('overlay__visible');
+      $('.overlay').removeClass('overlay--visible');
       $('#results').velocity({
         top: '-100vh'
       }, 400);
       tools.resetModal();
     },
     triggerWin: function() {
-      $('.modal--spinner').hide();
-      $('.modal__win').show();
+      $('.modal__spinner').hide();
+      $('.modal--win').show();
       var currentStars = parseInt( localStorage.getItem( 'stars' ) );
       store.insert( 'stars', currentStars + 1 );
       tools.updateStars();
     },
     triggerLose: function() {
-      $('.modal--spinner').hide();
-      $('.modal__lose').show();
+      $('.modal__spinner').hide();
+      $('.modal--lose').show();
     },
     resetModal: function() {
-      $('.modal--spinner').show();
-      $('.modal__lose').hide();
-      $('.modal__win').hide();
+      $('.modal--lose').hide();
+      $('.modal--win').hide();
     },
     updateStars: function() {
       var label = $('.star .num');

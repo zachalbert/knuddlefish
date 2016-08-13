@@ -10,12 +10,12 @@
   transition: top 0.25s ease-in;
   z-index: 500;
 
-  &__visible {
+  &--visible {
     top: 10vh;
     transition: top 0.35s ease-out;
   }
 
-  &--spinner {
+  &__spinner {
     width: $lead-double;
     height: $lead-double;
     background: $color-sometimes-small;
@@ -23,7 +23,7 @@
     margin: 0 auto;
   }
 
-  &--message {
+  &__message {
     width: 100%;
     text-align: center;
     font-size: 5rem;
@@ -31,15 +31,15 @@
     display: none;
   }
 
-  &__win {
+  &--win {
     color: $color-true;
   }
 
-  &__lose {
+  &--lose {
     color: $color-false;
   }
 
-  &--wrap {
+  &__wrap {
     width: 100%;
     height: 100%;
     position: absolute;
