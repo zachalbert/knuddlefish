@@ -4,91 +4,190 @@ body {
   font-weight: 100;
 }
 
-.arrow {
-  display: block;
-
-  &.right {
-    transform: rotate(90deg);
-  }
-
-  &.down {
-    transform: rotate(180deg);
-  }
-
-  &.left {
-    transform: rotate(270deg);
-  }
+p {
+  margin-bottom: $lead-single;
 }
 
-.puzzle {
-  white-space: nowrap;
+.panel {
+  padding: 1em;
+}
+
+.hide-children > * {
+  display: none;
+}
+
+.knuddle {
+  padding-top: 100%;
+  width: 100%;
+  height: 100%;
   position: relative;
 
-  &-wrap {
-    width: 100vw;
-    overflow: hidden;
-  }
-
-  &-panel {
-    width: 100vw;
-    display: inline-block;
-    float: left;
-    position: relative;
-  }
-
-  &-nav {
+  * {
     position: absolute;
-    bottom: 0;
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    padding: $lead-single;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
   }
-}
 
-.level0 .puzzle { left: 0vw; }
-.level1 .puzzle { left: -100vw; }
-
-.star {
-  float: left;
-  margin: 1rem;
-}
-
-.meta {
-  float: right;
-  margin: 1rem;
-
-  &-item {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    display: inline-block;
-    margin-left: 0.5rem;
-
-    span {
-      text-align: center;
-      font-weight: bold;
-      color: #fff;
-      display: block;
-      line-height: 3rem;
+  .tentacles {
+    &-l3,
+    &-l2,
+    &-l1,
+    &-r3,
+    &-r2,
+    &-r1 {
+      &--inactive .inactive { display: block; }
+      &--active .active     { display: block; }
     }
   }
 
-  &__true {
-    background: $color-true;
+  .ears {
+    &--up .up     { display: block; }
+    &--down .down { display: block; }
   }
 
-  &__sometimes {
-    background: $color-sometimes-small;
+  .eyeballs {
+    &--one   .eb1 { display: block; }
+    &--two   .eb2 { display: block; }
+    &--three .eb3 { display: block; }
   }
 
-  &__false {
-    background: $color-false;
+  .pupils {
+    &-left {
+      &.pupils--direction-1 .d1 { display: block; }
+      &.pupils--direction-2 .d2 { display: block; }
+      &.pupils--direction-3 .d3 { display: block; }
+      &.pupils--direction-4 .d4 { display: block; }
+      &.pupils--direction-5 .d5 { display: block; }
+      &.pupils--direction-6 .d6 { display: block; }
+      &.pupils--direction-7 .d7 { display: block; }
+    }
+    &-center {
+      &.pupils--direction-1 .d1 { display: block; }
+      &.pupils--direction-2 .d2 { display: block; }
+      &.pupils--direction-3 .d3 { display: block; }
+      &.pupils--direction-4 .d4 { display: block; }
+      &.pupils--direction-5 .d5 { display: block; }
+      &.pupils--direction-6 .d6 { display: block; }
+      &.pupils--direction-7 .d7 { display: block; }
+    }
+    &-right {
+      &.pupils--direction-1 .d1 { display: block; }
+      &.pupils--direction-2 .d2 { display: block; }
+      &.pupils--direction-3 .d3 { display: block; }
+      &.pupils--direction-4 .d4 { display: block; }
+      &.pupils--direction-5 .d5 { display: block; }
+      &.pupils--direction-6 .d6 { display: block; }
+      &.pupils--direction-7 .d7 { display: block; }
+    }
   }
-}
 
-.final-text {
-  text-align: center;
-  font-size: 5rem;
-  margin-top: $lead-single * 5;
+  .mouth {
+    &--1 .m1 { display: block; }
+    &--2 .m2 { display: block; }
+    &--3 .m3 { display: block; }
+    &--4 .m4 { display: block; }
+    &--5 .m5 { display: block; }
+  }
+
+  // Set color of all the things
+  .spots {
+    &--true {
+      svg {
+        path,
+        circle {
+          fill: $color-true;
+        }
+      }
+    }
+
+    &--false {
+      svg {
+        path,
+        circle {
+          fill: $color-false;
+        }
+      }
+    }
+
+    &--noinfo {
+      svg {
+        path,
+        circle {
+          fill: $color-noinfo;
+        }
+      }
+    }
+
+    &--both {
+      svg {
+        path,
+        circle {
+          fill: $color-both;
+        }
+      }
+    }
+
+    &--none {
+      svg {
+        path,
+        circle {
+          fill: none;
+        }
+      }
+    }
+  }
+
+  &--true {
+    .body svg,
+    .ears svg,
+    .eyes svg,
+    .tentacles svg {
+      path,
+      circle,
+      ellipse {
+        fill: $color-true;
+      }
+    }
+  }
+
+  &--false {
+    .body svg,
+    .ears svg,
+    .eyes svg,
+    .tentacles svg {
+      path,
+      circle,
+      ellipse {
+        fill: $color-false;
+      }
+    }
+  }
+
+  &--noinfo {
+    .body svg,
+    .ears svg,
+    .eyes svg,
+    .tentacles svg {
+      path,
+      circle,
+      ellipse {
+        fill: $color-noinfo;
+      }
+    }
+  }
+
+  &--both {
+    .body svg,
+    .ears svg,
+    .eyes svg,
+    .tentacles svg {
+      path,
+      circle,
+      ellipse {
+        fill: $color-both;
+      }
+    }
+  }
 }

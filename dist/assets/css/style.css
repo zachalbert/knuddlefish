@@ -1,3 +1,15 @@
+.lead-half {
+  margin-bottom: 13.5px; }
+
+.lead-single {
+  margin-bottom: 27px; }
+
+.lead-double {
+  margin-bottom: 54px; }
+
+.lead-triple {
+  margin-bottom: 81px; }
+
 .clear:before, .clear:after {
   content: ' ';
   display: table; }
@@ -13,7 +25,7 @@
   text-rendering: optimizeLegibility; }
 
 body {
-  font-size: 16px; }
+  font-size: 18px; }
 
 a {
   transition: all 0.1s ease-out; }
@@ -582,20 +594,17 @@ th {
 .top-xs {
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
-  -ms-grid-row-align: flex-start;
-      align-items: flex-start; }
+  align-items: flex-start; }
 
 .middle-xs {
   -webkit-align-items: center;
   -ms-flex-align: center;
-  -ms-grid-row-align: center;
-      align-items: center; }
+  align-items: center; }
 
 .bottom-xs {
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
-  -ms-grid-row-align: flex-end;
-      align-items: flex-end; }
+  align-items: flex-end; }
 
 .around-xs {
   -webkit-justify-content: space-around;
@@ -762,18 +771,15 @@ th {
   .top-sm {
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
-    -ms-grid-row-align: flex-start;
-        align-items: flex-start; }
+    align-items: flex-start; }
   .middle-sm {
     -webkit-align-items: center;
     -ms-flex-align: center;
-    -ms-grid-row-align: center;
-        align-items: center; }
+    align-items: center; }
   .bottom-sm {
     -webkit-align-items: flex-end;
     -ms-flex-align: end;
-    -ms-grid-row-align: flex-end;
-        align-items: flex-end; }
+    align-items: flex-end; }
   .around-sm {
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
@@ -936,18 +942,15 @@ th {
   .top-md {
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
-    -ms-grid-row-align: flex-start;
-        align-items: flex-start; }
+    align-items: flex-start; }
   .middle-md {
     -webkit-align-items: center;
     -ms-flex-align: center;
-    -ms-grid-row-align: center;
-        align-items: center; }
+    align-items: center; }
   .bottom-md {
     -webkit-align-items: flex-end;
     -ms-flex-align: end;
-    -ms-grid-row-align: flex-end;
-        align-items: flex-end; }
+    align-items: flex-end; }
   .around-md {
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
@@ -1110,18 +1113,15 @@ th {
   .top-lg {
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
-    -ms-grid-row-align: flex-start;
-        align-items: flex-start; }
+    align-items: flex-start; }
   .middle-lg {
     -webkit-align-items: center;
     -ms-flex-align: center;
-    -ms-grid-row-align: center;
-        align-items: center; }
+    align-items: center; }
   .bottom-lg {
     -webkit-align-items: flex-end;
     -ms-flex-align: end;
-    -ms-grid-row-align: flex-end;
-        align-items: flex-end; }
+    align-items: flex-end; }
   .around-lg {
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
@@ -1167,81 +1167,6 @@ h1 {
   color: #074059;
   text-shadow: none; }
 
-.btn {
-  display: block;
-  text-align: center;
-  font-size: 3em;
-  font-weight: bolder;
-  text-decoration: none;
-  padding: 1.5rem 1rem; }
-  .btn--bottom {
-    position: absolute;
-    bottom: 0; }
-  .btn--half {
-    width: 30vw; }
-  .btn--prev {
-    left: 0; }
-  .btn--next {
-    left: 70vw; }
-  .btn--primary {
-    background: #b7fedd;
-    color: #074059; }
-    .btn--primary:hover {
-      background: #85fdc5; }
-  .btn--secondary {
-    background: #59f0e8;
-    color: #074059; }
-    .btn--secondary:hover {
-      background: #2aece2; }
-  .btn--big {
-    width: 80%;
-    margin: 0 auto 2rem;
-    border-radius: 0.5rem;
-    color: #fff;
-    padding: 1rem;
-    font-size: 4rem;
-    position: relative;
-    box-shadow: inset 0 -8px 0 rgba(0, 0, 0, 0.08); }
-    .btn--big:after {
-      content: '';
-      position: absolute;
-      border-radius: 0.5rem;
-      z-index: -1;
-      width: 101%;
-      height: 101%;
-      background: rgba(0, 0, 0, 0.08);
-      top: 10px;
-      left: -0.5%;
-      -webkit-filter: blur(2px);
-              filter: blur(2px); }
-    .btn--big.btn--yes {
-      font-size: 3em;
-      padding: 1.72rem 1rem; }
-    .btn--big:active {
-      top: 10px; }
-      .btn--big:active:after {
-        width: 100%;
-        left: 0;
-        top: 3px;
-        -webkit-filter: blur(0);
-                filter: blur(0); }
-  .btn--t {
-    background: #6AE1E6; }
-    .btn--t:hover {
-      background: #47dae0; }
-  .btn--s {
-    background: repeating-linear-gradient(315deg, #6AE1E6, #6AE1E6 70px, #ff936a 70px, #ff936a 140px); }
-    .btn--s:hover {
-      background: repeating-linear-gradient(315deg, #47dae0, #47dae0 70px, #ff7541 70px, #ff7541 140px); }
-  .btn--f {
-    background: #ff936a; }
-    .btn--f:hover {
-      background: #ff7541; }
-  .btn--n {
-    background: #aab0b5; }
-    .btn--n:hover {
-      background: #949ca2; }
-
 .modal {
   position: absolute;
   width: 70vw;
@@ -1261,9 +1186,9 @@ h1 {
     top: 10vh;
     transition: top 0.35s ease-out; }
   .modal__spinner {
-    width: 48px;
-    height: 48px;
-    background: repeating-linear-gradient(315deg, #6AE1E6, #6AE1E6 34px, #ff936a 34px, #ff936a 68px);
+    width: 54px;
+    height: 54px;
+    background: #ab6ef0;
     -webkit-animation: spin 2s ease-in-out infinite;
             animation: spin 2s ease-in-out infinite;
     margin: 0 auto; }
@@ -1274,9 +1199,9 @@ h1 {
     padding: 5rem;
     display: none; }
   .modal--win {
-    color: #6AE1E6; }
+    color: #bbef4b; }
   .modal--lose {
-    color: #ff936a; }
+    color: #ff6e26; }
   .modal__wrap {
     width: 100%;
     height: 100%;
@@ -1323,81 +1248,160 @@ h1 {
             transform: rotate(405deg); } }
 
 body {
-  background: #d6e6ed;
+  background: #fff;
   font-family: brandon-grotesque, Helvetica, sans-serif;
   font-weight: 100; }
 
-.arrow {
-  display: block; }
-  .arrow.right {
-    -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-            transform: rotate(90deg); }
-  .arrow.down {
-    -webkit-transform: rotate(180deg);
-        -ms-transform: rotate(180deg);
-            transform: rotate(180deg); }
-  .arrow.left {
-    -webkit-transform: rotate(270deg);
-        -ms-transform: rotate(270deg);
-            transform: rotate(270deg); }
+p {
+  margin-bottom: 27px; }
 
-.puzzle {
-  white-space: nowrap;
+.panel {
+  padding: 1em; }
+
+.hide-children > * {
+  display: none; }
+
+.knuddle {
+  padding-top: 100%;
+  width: 100%;
+  height: 100%;
   position: relative; }
-  .puzzle-wrap {
-    width: 100vw;
-    overflow: hidden; }
-  .puzzle-panel {
-    width: 100vw;
-    display: inline-block;
-    float: left;
-    position: relative; }
-  .puzzle-nav {
+  .knuddle * {
     position: absolute;
-    bottom: 0;
-    width: 100vw;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding: 24px; }
-
-.level0 .puzzle {
-  left: 0vw; }
-
-.level1 .puzzle {
-  left: -100vw; }
-
-.star {
-  float: left;
-  margin: 1rem; }
-
-.meta {
-  float: right;
-  margin: 1rem; }
-  .meta-item {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    display: inline-block;
-    margin-left: 0.5rem; }
-    .meta-item span {
-      text-align: center;
-      font-weight: bold;
-      color: #fff;
-      display: block;
-      line-height: 3rem; }
-  .meta__true {
-    background: #6AE1E6; }
-  .meta__sometimes {
-    background: repeating-linear-gradient(315deg, #6AE1E6, #6AE1E6 34px, #ff936a 34px, #ff936a 68px); }
-  .meta__false {
-    background: #ff936a; }
-
-.final-text {
-  text-align: center;
-  font-size: 5rem;
-  margin-top: 120px; }
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0; }
+  .knuddle .tentacles-l3--inactive .inactive, .knuddle .tentacles-l2--inactive .inactive, .knuddle .tentacles-l1--inactive .inactive, .knuddle .tentacles-r3--inactive .inactive, .knuddle .tentacles-r2--inactive .inactive, .knuddle .tentacles-r1--inactive .inactive {
+    display: block; }
+  .knuddle .tentacles-l3--active .active, .knuddle .tentacles-l2--active .active, .knuddle .tentacles-l1--active .active, .knuddle .tentacles-r3--active .active, .knuddle .tentacles-r2--active .active, .knuddle .tentacles-r1--active .active {
+    display: block; }
+  .knuddle .ears--up .up {
+    display: block; }
+  .knuddle .ears--down .down {
+    display: block; }
+  .knuddle .eyeballs--one .eb1 {
+    display: block; }
+  .knuddle .eyeballs--two .eb2 {
+    display: block; }
+  .knuddle .eyeballs--three .eb3 {
+    display: block; }
+  .knuddle .pupils-left.pupils--direction-1 .d1 {
+    display: block; }
+  .knuddle .pupils-left.pupils--direction-2 .d2 {
+    display: block; }
+  .knuddle .pupils-left.pupils--direction-3 .d3 {
+    display: block; }
+  .knuddle .pupils-left.pupils--direction-4 .d4 {
+    display: block; }
+  .knuddle .pupils-left.pupils--direction-5 .d5 {
+    display: block; }
+  .knuddle .pupils-left.pupils--direction-6 .d6 {
+    display: block; }
+  .knuddle .pupils-left.pupils--direction-7 .d7 {
+    display: block; }
+  .knuddle .pupils-center.pupils--direction-1 .d1 {
+    display: block; }
+  .knuddle .pupils-center.pupils--direction-2 .d2 {
+    display: block; }
+  .knuddle .pupils-center.pupils--direction-3 .d3 {
+    display: block; }
+  .knuddle .pupils-center.pupils--direction-4 .d4 {
+    display: block; }
+  .knuddle .pupils-center.pupils--direction-5 .d5 {
+    display: block; }
+  .knuddle .pupils-center.pupils--direction-6 .d6 {
+    display: block; }
+  .knuddle .pupils-center.pupils--direction-7 .d7 {
+    display: block; }
+  .knuddle .pupils-right.pupils--direction-1 .d1 {
+    display: block; }
+  .knuddle .pupils-right.pupils--direction-2 .d2 {
+    display: block; }
+  .knuddle .pupils-right.pupils--direction-3 .d3 {
+    display: block; }
+  .knuddle .pupils-right.pupils--direction-4 .d4 {
+    display: block; }
+  .knuddle .pupils-right.pupils--direction-5 .d5 {
+    display: block; }
+  .knuddle .pupils-right.pupils--direction-6 .d6 {
+    display: block; }
+  .knuddle .pupils-right.pupils--direction-7 .d7 {
+    display: block; }
+  .knuddle .mouth--1 .m1 {
+    display: block; }
+  .knuddle .mouth--2 .m2 {
+    display: block; }
+  .knuddle .mouth--3 .m3 {
+    display: block; }
+  .knuddle .mouth--4 .m4 {
+    display: block; }
+  .knuddle .mouth--5 .m5 {
+    display: block; }
+  .knuddle .spots--true svg path,
+  .knuddle .spots--true svg circle {
+    fill: #bbef4b; }
+  .knuddle .spots--false svg path,
+  .knuddle .spots--false svg circle {
+    fill: #ff6e26; }
+  .knuddle .spots--noinfo svg path,
+  .knuddle .spots--noinfo svg circle {
+    fill: #7dc3c7; }
+  .knuddle .spots--both svg path,
+  .knuddle .spots--both svg circle {
+    fill: #ab6ef0; }
+  .knuddle .spots--none svg path,
+  .knuddle .spots--none svg circle {
+    fill: none; }
+  .knuddle--true .body svg path,
+  .knuddle--true .body svg circle,
+  .knuddle--true .body svg ellipse,
+  .knuddle--true .ears svg path,
+  .knuddle--true .ears svg circle,
+  .knuddle--true .ears svg ellipse,
+  .knuddle--true .eyes svg path,
+  .knuddle--true .eyes svg circle,
+  .knuddle--true .eyes svg ellipse,
+  .knuddle--true .tentacles svg path,
+  .knuddle--true .tentacles svg circle,
+  .knuddle--true .tentacles svg ellipse {
+    fill: #bbef4b; }
+  .knuddle--false .body svg path,
+  .knuddle--false .body svg circle,
+  .knuddle--false .body svg ellipse,
+  .knuddle--false .ears svg path,
+  .knuddle--false .ears svg circle,
+  .knuddle--false .ears svg ellipse,
+  .knuddle--false .eyes svg path,
+  .knuddle--false .eyes svg circle,
+  .knuddle--false .eyes svg ellipse,
+  .knuddle--false .tentacles svg path,
+  .knuddle--false .tentacles svg circle,
+  .knuddle--false .tentacles svg ellipse {
+    fill: #ff6e26; }
+  .knuddle--noinfo .body svg path,
+  .knuddle--noinfo .body svg circle,
+  .knuddle--noinfo .body svg ellipse,
+  .knuddle--noinfo .ears svg path,
+  .knuddle--noinfo .ears svg circle,
+  .knuddle--noinfo .ears svg ellipse,
+  .knuddle--noinfo .eyes svg path,
+  .knuddle--noinfo .eyes svg circle,
+  .knuddle--noinfo .eyes svg ellipse,
+  .knuddle--noinfo .tentacles svg path,
+  .knuddle--noinfo .tentacles svg circle,
+  .knuddle--noinfo .tentacles svg ellipse {
+    fill: #7dc3c7; }
+  .knuddle--both .body svg path,
+  .knuddle--both .body svg circle,
+  .knuddle--both .body svg ellipse,
+  .knuddle--both .ears svg path,
+  .knuddle--both .ears svg circle,
+  .knuddle--both .ears svg ellipse,
+  .knuddle--both .eyes svg path,
+  .knuddle--both .eyes svg circle,
+  .knuddle--both .eyes svg ellipse,
+  .knuddle--both .tentacles svg path,
+  .knuddle--both .tentacles svg circle,
+  .knuddle--both .tentacles svg ellipse {
+    fill: #ab6ef0; }

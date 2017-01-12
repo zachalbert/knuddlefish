@@ -8,37 +8,21 @@
      store
   */
 
+  tools.svg();
   tools.init();
 
   // Event handling
 
-  $('.puzzle-panel .puzzle-btn').click( function() {
+  $('.puzzle-panel .puzzle-btn').click( function(e) {
     // Figure out which button was clicked, by getting the id or whatever
     var button = $(this);
-    var panelWidth = button.parent().width();
 
     // Trigger the results modal
     tools.showModal();
 
-    // Move to the next puzzle
-    function advancePuzzle() {
-      tools.hideModal();
-
-      var parentId = button.parent().attr( 'id' );
-      var parentExplode = parentId.split('-');
-      var nextPuzzle = parseInt( parentExplode[1] ) + 1;
-      var newPos = nextPuzzle * panelWidth;
-
-      $('.puzzle').velocity({
-        left: -newPos
-      }, {
-        delay: 400
-      });
-    }
-
     // Figure out if the clicked button is a winner or a loser
     function showResults() {
-      var outcome = button.data('outcome');
+      var outcome = button.data( 'outcome' );
 
       if( outcome == 'win' ) {
         tools.triggerWin();
@@ -46,11 +30,19 @@
         tools.triggerLose();
       }
 
-      var hide = setTimeout( advancePuzzle, config.showResultsLength );
+      var hide = setTimeout( tools.changePuzzle( 'next' ), config.showResultsLength );
     }
 
     // Add a slight delay to build suspense
     var calculating = setTimeout( showResults, config.calcDelay );
+  });
+
+  $('.dev-nav-left').click( function() {
+    tools.changePuzzle('previous');
+  });
+
+  $('.dev-nav-right').click( function() {
+    tools.changePuzzle('next');
   });
 
   $('.overlay').click( function() {
